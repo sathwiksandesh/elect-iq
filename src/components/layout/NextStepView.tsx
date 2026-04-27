@@ -88,7 +88,7 @@ export function NextStepView() {
   function pick(value: string) {
     const next = { ...answers, [STEPS[step].id]: value };
     setAnswers(next);
-    if (step < STEPS.length - 1) setStep(s => s + 1);
+    if (step < STEPS.length - 1) setStep(prev => prev + 1);
     else setDone(true);
   }
 
@@ -121,7 +121,7 @@ export function NextStepView() {
           <div className="space-y-5 animate-fade-in max-w-lg mx-auto">
             {/* Step progress */}
             <div className="flex items-center gap-2" aria-label={`Step ${step + 1} of ${STEPS.length}`}>
-              {STEPS.map((s, i) => (
+              {STEPS.map((_, i) => (
                 <div key={i} className="flex items-center gap-2 flex-1">
                   <div className={clsx(
                     'w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300',
