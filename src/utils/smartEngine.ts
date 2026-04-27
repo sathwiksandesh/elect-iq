@@ -134,7 +134,14 @@ const RESPONSES: Record<Intent, string | ResponseMap> = {
     australia: '🏛️ **The Australian Electoral Commission (AEC)**\n\nThe AEC is an independent federal body that runs all federal elections.\n\n📍 Website: **aec.gov.au**\n📞 Phone: **13 23 26**\n\nState elections are run by separate state electoral commissions.',
     germany:   '🏛️ **Federal Returning Officer (Bundeswahlleiter)**\n\nThe Bundeswahlleiter is the independent federal authority overseeing Bundestag elections.\n\n📍 Website: **bundeswahlleiter.de**\n\nLocal elections are administered by state Landeswahlleiter and local Gemeindeverwaltungen.',
   },
-
+  campaigning: {
+  india:     '📣 **Campaigning Rules in India**\n\nCampaigning is governed by the **Model Code of Conduct (MCC)**...\n- Candidate spending limit: ₹70–95 lakh per constituency\n- Campaigning stops **48 hours before polling**\n- Report violations via the **cVIGIL app**',
+  usa:       '📣 **Campaigning Rules in the USA**\n\nRegulated by the **FEC (fec.gov)**.\n- All donations and expenditures must be disclosed\n- No campaigning near polling places on Election Day\n- Political ads must include "paid for by" disclosures',
+  uk:        '📣 **Campaigning Rules in the UK**\n\nRegulated by the **Electoral Commission**.\n- Candidate spending limit: ~£15,000–£21,000 per constituency\n- All election material must show who produced it\n- Campaigning ends at **10pm on polling day**',
+  australia: '📣 **Campaigning Rules in Australia**\n\nGoverned by the **Australian Electoral Act**.\n- No campaigning within **6 metres** of a polling booth entrance\n- No political TV/radio ads in the **3 days before polling day**\n- Donations above $16,300 must be disclosed',
+  germany:   '📣 **Campaigning Rules in Germany**\n\nGoverned by the **Parteiengesetz (Political Parties Act)**.\n- Donations above €10,000 must be disclosed\n- Campaigning stops at **6pm on election day**\n- No campaigning inside polling stations',
+  },
+  system: '🤖 **About ElectIQ**\n\nI\'m ElectIQ, an AI-powered election guide for voters.\n\nI can help with:\n- 📝 Voter registration\n- 🪪 ID requirements\n- ✅ Eligibility rules\n- 📍 Finding your polling booth\n- 🗳️ What happens on voting day\n- 🔢 How votes are counted\n- 🏛️ Electoral authorities\n\nCurrently supporting 🇮🇳 India, 🇺🇸 USA, 🇬🇧 UK, 🇦🇺 Australia, and 🇩🇪 Germany.',
   compulsory: {
     india:     '❓ **Is voting compulsory in India?**\n\nNo — voting is **voluntary** in India. You will not be fined for not voting. However, the ECI and civil society strongly encourage participation as a civic duty.\n\n📊 India\'s voter turnout is typically 60–70% in Lok Sabha elections.',
     usa:       '❓ **Is voting compulsory in the USA?**\n\nNo — voting is **voluntary** in the United States. There is no penalty for not voting. However, local elections often have very low turnout, meaning a small number of engaged voters can have outsized impact.',
